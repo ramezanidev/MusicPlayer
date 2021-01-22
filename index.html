@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+        <div class="bottom_container">
+            <div class="ctrl_box">
+                <div class="progress">
+                    <div class="play_time progress_time">00:00</div>
+                    <div class="progress_bar" id="progress_bar">
+                        <span></span>
+                    </div>
+                    <div class="total_time progress_time">00:00</div>
+                </div>
+                <div class="ctrl_cover">
+                    <div class="volume_cover">
+                        <div class="volume_progress" id="volume_progress">
+                            <span></span>
+                        </div>
+                        <button class="player_btn volume_btn">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button class="player_btn previous_btn" id="previous_btn"><i class="fas fa-step-backward"></i></button>
+                        <button class="player_btn drop_before_btn"><i class="fas fa-backward"></i></button>
+                        <button class="player_btn pause_btn"><i class="fas fa-play"></i></button>
+                        <button class="player_btn drop_affter_btn"><i class="fas fa-forward "></i></button>
+                        <button class="player_btn next_btn" id="next_btn"><i class="fas fa-step-forward"></i></button>
+                    </div>
+                    <div style="width: 136px;display: flex;justify-content: flex-end;">                        
+                        <button class="player_btn repeat">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left_container">
+            <div class="muics_information">
+                <div class="info_img">
+                    <img src="img/default.jpg" draggable="false">
+                </div>
+                <span class="info_muicsName">Muics Name</span>
+                <div class="row">                    
+                    <span class="info_Artist">Artist Name</span>
+                    <span class="info_time">00:00</span>
+                </div>
+                <div class="info_Equalizer"></div>
+            </div>
+            <div class="music_list">
+                <div class="music_list_bar">
+                    <span>آهنگ های مورد علاقه</span>
+                    <button class="like_list_btn"><i class="far fa-heart" aria-hidden="true"></i></button>
+                </div>
+                <ul id="music_list">
+                </ul>
+            </div>
+        </div>
+        <div class="resize_container"></div>
+        <div class="right_container">
+            <div class="cover_music">
+                <span></span>
+                <img class="cover_music_img" src="img/default.jpg">
+            </div>
+            <div class="bg_cover_music"></div>
+            <div class="cover_music_titel">
+                <h3 class="c_t_MusicName"></h3>
+                <p class="c_t_Artist"></p>
+            </div>
+        </div>
+    </div>
+    <audio src="" id="audioItem" hidden></audio>
+</body>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="js/script.js"></script>
+</html>
